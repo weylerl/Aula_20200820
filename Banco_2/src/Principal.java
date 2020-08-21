@@ -9,11 +9,9 @@ public class Principal {
 
 		Cliente c2 = new Cliente("Maria dos Santos", "12345678944", new SimpleDateFormat("dd/MM/yyyy").parse("13/08/1968"));
 		
-		System.out.println(c1.toString());
-		c1.setCliente(15000.00);
-		System.out.println(c1.toString());
+		Conta cta1 = new Conta(1, c1);
 		
-		System.out.println(c2.toString());
+		System.out.println(cta1);
 	}
 
 }

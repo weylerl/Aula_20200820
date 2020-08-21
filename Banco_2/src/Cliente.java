@@ -24,6 +24,10 @@ public class Cliente {
 		this.rendaMensal = 0.00;
 	}
 	
+	public String getNome() {
+		return nome;
+	}
+
 	public void setCliente(Double renda) {
 		this.rendaMensal = renda;
 	}
@@ -32,4 +36,5 @@ public class Cliente {
 		SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
 		return "Cliente [nome=" + nome + ", CPF=" + CPF + ", dataNasc=" + formatoData.format(dataNasc) + ", renda=" + rendaMensal + "]";
 	}
+
 }
